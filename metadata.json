@@ -1,8 +1,6 @@
 {
-  "name": "Remix Encrypted Chat",
-  "description": "Verschlüsselte Chat-App mit Ende-zu-Ende AES-256-GCM Verschlüsselung, Sicherheitsfingerabdruck, selbstzerstörenden Nachrichten und Echtzeit-Cipher-Inspector.",
+  "name": "Encrypted Chat",
+  "description": "Text mit AES-256-GCM verschlüsseln und den Code per E-Mail oder Messenger verschicken. Der Empfänger entschlüsselt ihn mit derselben App und dem vereinbarten Passwort.",
   "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+  "majorCapabilities": []
 }
