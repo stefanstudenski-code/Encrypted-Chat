@@ -6,6 +6,8 @@ Der Empfänger fügt ihn in dieselbe App ein und entschlüsselt ihn mit dem vere
 
 Es gibt keinen Server: Alles läuft im Browser, nichts wird gespeichert oder ins Internet gesendet.
 
+**➜ App öffnen: https://stefanstudenski-code.github.io/Encrypted-Chat/**
+
 ## Benutzung
 
 1. **Verschlüsseln:** Text eingeben, Passwort eingeben oder „Sicheres Passwort erzeugen“,
@@ -54,5 +56,6 @@ nicht – die App zeigt dann einen Hinweis.
 
 ## Verteilen
 
-- **Als Webseite:** `dist/` z. B. über GitHub Pages hosten (kostenlos, mit HTTPS).
+- **Als Webseite:** Jeder Push auf `main` wird per GitHub Actions getestet, gebaut und auf
+  GitHub Pages veröffentlicht (`.github/workflows/pages.yml`).
 - **Als Android-App:** mit Capacitor (`npx cap add android`) in eine App verpacken.

@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Info, Loader2, Lock, Mail, Share2, TriangleAlert } from 'lucide-react';
 import { encryptText, type EncryptResult } from '../lib/crypto';
 import { canShare } from '../lib/clipboard';
+import { APP_URL } from '../config';
 import { CopyButton } from './CopyButton';
 import { DetailsBox } from './DetailsBox';
 import { PasswordField } from './PasswordField';
 
 const SHARE_INTRO =
-  'Diese Nachricht ist verschlüsselt. Zum Lesen den folgenden Code in der App „Encrypted Chat“ unter „Entschlüsseln“ einfügen und das vereinbarte Passwort eingeben:';
+  `Diese Nachricht ist verschlüsselt. Zum Lesen ${APP_URL} öffnen, unter „Entschlüsseln“ den folgenden Code einfügen und das vereinbarte Passwort eingeben:`;
 
 // Viele Mail-Programme kürzen mailto-Links ab etwa 2000 Zeichen
 const MAILTO_LIMIT = 1900;
